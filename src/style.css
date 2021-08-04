@@ -11,6 +11,7 @@ ul {
 
 
 
+
 .countainer {
     max-width: 600px;
     margin: 0 auto;
@@ -40,6 +41,7 @@ ul {
 }
 .gitHubLink {
     text-align: center;
+    font-size: 10px;
 }
 
 #city {

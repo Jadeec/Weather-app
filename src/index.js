@@ -83,11 +83,29 @@ function findLocation (event) {
   }
 
   
-}
+}  
+
 let locationButton = document.getElementById("locationButton");
 locationButton.addEventListener("click", findLocation); 
 
+function forcastTemp (event){
+  event.preventDefault();
+  let input = document.getElementById('inputPassword6')
+  let city = input.value;
 
+let apiKey = "231854760189f7f05bf66b319c23555e";
+let apiUrl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&cnt={3}&appid=${apiKey}&&units=metric`;
+axios.get(apiUrl).then(getForcast);
+
+function getForcast (response){
+console.log(response);
+}
+
+
+}
+
+let forcast = document.querySelector('forcast');
+form.addEventListener("submit", forcastTemp);
 /* function change (event) {
   event.preventDefault(); 
   document.getElementById('temperature').innerHTML = `19`;
