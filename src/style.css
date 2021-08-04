@@ -1,59 +1,69 @@
 body {
-    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    color: blanchedalmond;
+    color: #FFFF; 
 }
 
-h2 {
-    display: inline-block;
+ul {
+
+    color: gray;
+    list-style: none;
+    
+}
+
+
+
+.countainer {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:#F9F8FD;
+    border: solid 1px gray;
+    border-radius: 20px;
+   margin-top: 30px;
+  
+    
+}
+
+.seconde {
     position: relative;
-    top: 440px;
-    left: 26px;
-    color: blanchedalmond;
-}
-
-p {
-    display: inline-block;
-    position: relative;
-    top: 540px;
-    left: -65px;
-    color: blanchedalmond;
-}
-
-
-.weather {
-    font-size: 20px;
-}
-.border {
-border-radius: 20px;
-max-width: 600px;
-display: block;
-margin: 0 auto;
-background-image:url(https://images.unsplash.com/photo-1537420327992-d6e192287183?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)
+    top: -120px;
+    right: -320px;
 
 }
+
 
 .searchBar {
-    display: inline;
-    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-self: flex-start;
     top: 65px;
     color: blanchedalmond;
     
 }
 
-.col-2 {
-    border-left: 3px solid black;
-    color: blanchedalmond;
-  }
+#city {
+   
+    font-size: 40px;
+}
 
-
- #celsiusLink {
+#city, #temperature, #day, #hour, #minutes, #details {
+    color: gray;
+}
+  
+#temperature {
+    font-size: 50px;
+    font-weight: 400;
+}
+#unitLink{
+ 
     text-decoration: none;
     color: cadetblue;
 }
 
-#fahrenheitLink {
-    text-decoration: none;
-    color: cadetblue;
+#locationButton {
+    display: inline-block;
+    position: relative;
+    top: -55px;
+    right: -300px;
+
 }
 
 

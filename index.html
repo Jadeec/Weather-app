@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fa0c213a20.js" crossorigin="anonymous"></script>
     <title>Weather forcast</title>
 </head>
 <body>
-   
-    <div class="container">
-        <div class="border">
-        <div class="searchBar">
+    <div class="countainer">
+
+     
+         <div class="searchBar">
         <form>
             <div class="row g-3 align-items-center">
                 <div class="col-auto">
@@ -28,64 +30,59 @@
                     
                   </span>
                 </div>
+                <div id="locationButton">
+                    <button type="button" class="btn btn-primary">My location</button>
+                </div>
             </div>
         </form>
-    </div>
-
-       <h2>
-          <span id="city"> Paris </span> 
-          <div class="weather"> 
-           <i class="fas fa-thermometer-half"></i>
-           <span id="temperature"> 19°C</span>
-            
-           <span class="units"> 
-            <a href="#" id="celsiusLink"> °C </a> |
-             <a href="#" id="fahrenheitLink"> °F </a> 
-            </span>
-            <br>
-    
-           <span id="day"> tuesday </span> <span id="hour"> 17 </span>:<span id= minutes >40 </span> 
         </div>
+    
+        
+        <div class="main ">
+            <ul>
+                <li>
+                   <span id="city"> Paris </span> 
+                </li>
+                <li>
+                    <span id="day"> tuesday </span> <span id="hour"> 17 </span>: <span id= minutes >40 </span> 
+                 </li>
+                <li>
+                   <span id="temperature"> 44 </span> 
+                   <span id="preciseUnit"> °C </span>
 
-          
-
-       </h2>
-
-       <p>
-       <img src="src/partly_cloudy.png"> Mostly cloudy <br> <i class="fas fa-tint"></i> Humidity 54% <br> <i class="fas fa-wind"></i> 11km/h
-       </p>
+                </li>
+                <li>
+                    <span id="unit"> 
+                    <p>Change to <a href="#" id= "unitLink"> fahrenheit </a> </p>
+                     
+                    </span>
+                </li>
+                   
+                
+            </ul>
+        </div> 
    
-
+         
+         
       
-     <div class="row gy-4 justify-content-end">
-         <div class="col-2">
-            T <br> <img src="src/sunny.png"> <br> 21°C
-         </div>
-         <div class="row gy-4 justify-content-end">
-         <div class="col-2">
-            W <br> <img src="src/rain_light.png"> <br> 17°C 
+      
+            <div class="seconde">
+                <ul>
+                    <li>
+                     <img src="src/partly_cloudy.png"> <span id="weatherDescription"> Mostly cloudy</span>
+                    </li>
+                    <li>
+                        Humidity <span id="humidity"> 54 </span> % <br> Wind  <span id="wind"> 11 </span> km/h
+                    </li>
+                </ul>
+               </div>
+                   
+       
         </div>
-    </div>
-     <div class="row gy-4 justify-content-end">
-        <div class="col-2">
-            T <br> <img src="src/partly_cloudy.png"> <br> 20°C 
-        </div>
-    </div>
-    <div class="row gy-4 justify-content-end">
-        <div class="col-2">
-            F <br> <img src="src/sunny.png"> <br> 25°C
-        </div>
-    </div>
-    <div class="row gy-4 justify-content-end">
-        <div class="col-2">
-            S  <br> <img src="src/rain_light.png"> <br> 15°C 
-        </div>
-        </div>
-     </div>
+ 
+        
+        
    
-    </div>
-    </div>
-    
     
     <script src="src/index.js"></script>
 </body>
