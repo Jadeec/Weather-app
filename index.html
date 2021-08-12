@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="countainer">
-
+      
      
          <div class="searchBar">
         <form>
@@ -37,70 +37,59 @@
         </div>
     
         
-        <div class="main ">
-            <ul>
-                <li>
-                   <span id="city"> Paris </span> 
-                </li>
-                <li>
-                    <span id="day"> tuesday </span> <span id="hour"> 17 </span>: <span id= minutes >40 </span> 
-                 </li>
-                <li>
-                   <span id="temperature"> 11 </span> 
-                   <span id="preciseUnit"> °C </span>
-
-                </li>
-                <li>
-                    <span id="unit"> 
-                    <p>Change to <a href="#" id= "unitLink"> fahrenheit </a> </p>
-                     
-                    </span>
-                </li>
-                   
+         <div class="main ">
+            
+              <div class="row justify-content-around"> 
+                  <div class="col-sm-3"> <span id="city"> Paris </span>  </div>
+                  <div class="col-sm-5 offset-2"><img src="src/partly_cloudy.png"> <span id="weatherDescription"> Mostly cloudy</span></div>
+                </div>
                 
-            </ul>
-        </div> 
-   
-         
-         
-      
-      
-            <div class="seconde">
-                <ul>
-                    <li>
-                     <img src="src/partly_cloudy.png"> <span id="weatherDescription"> Mostly cloudy</span>
-                    </li>
-                    <li>
-                        Humidity <span id="humidity"> 54 </span> % <br> Wind  <span id="wind"> 11 </span> km/h
-                    </li>
-                </ul>
+                <div class="row justify-content-around">
+                    <div class="col-sm-3"> <span id="day"> tuesday </span> <span id="hour"> 17 </span>: <span id= minutes >40 </span> </div>
+                    <div class="col-sm-5 offset-3">Humidity <span id="humidity"> 54 </span> % </div>
+                </div>
 
-            <!---
-               </div>
-                  <div class="container">
-                   <div id="forcast">
-                    <div class="row">
-                        <div class="col">
-                        Column
-                       </div>
-                       <div class="col">
-                        Column
-                       </div>
-                       <div class="col">
-                        Column
-                       </div>
-                      </div> 
-                   </div>
-                 -->  
+
+                <div class="row temperature-row justify-content-around">
+                    <div class="col-sm-3"> <span id="temperature"> 11 </span>  <span id="preciseUnit"> °C|<a href="#" id= "unitLink"> F </a></span> </div>
+                    <div class="col-sm-5 offset-3"> Wind  <span id="wind"> 11 </span> km/h </div>
+                </div>
+                
+            
+             
+              
+                <div class="forecast">
+                  <div class="row">
+                      <div class="col-3">
+                       Column
+                     </div>
+                     <div class="col-3">
+                       Column
+                     </div>
+                     <div class="col-3">
+                       Column
+                     </div>
+                     <div class="col-3">
+                       Column
+                     </div>
+                    </div>
+                </div> 
+   
+         </div>
+    
+
+            
+            
                   
-              </div> 
+                  
+             
         
           
-       
+            
         </div>
         <div class="gitHubLink">
             <a href="https://github.com/Jadeec/Weather-app" target="_blank" rel="noopener noreferrer"> Open source code</a>
-            <p>by Jadee</p>
+            <p>by Jade</p>
 
         </div>
  
