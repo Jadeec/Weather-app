@@ -3,10 +3,6 @@ body {
 }
 
 
-.temperature-row{
-    line-height-step: 50px;
-}
-
 .countainer {
     max-width: 600px;
     margin: 0 auto;
@@ -22,27 +18,33 @@ body {
 
 .searchBar {
     margin-top: 30px;
-    margin-bottom: 30px;
     align-self: flex-start;
     top: 65px;
     color: blanchedalmond;
     
 }
+.cityName, .preciseUnit {
+    margin-left: calc(var(--bs-gutter-x)* 2) !important;
+}
+.main {
+    color: gray;
+}
+
 .gitHubLink {
     text-align: center;
     font-size: 10px;
+}
+.date, .weatherDescription {
+    font-size: 12px;
 }
 
 #city {
     font-size: 45px;
 }
 
-#city, #temperature, #day, #hour, #minutes {
-    color: gray;
-}
   
 #temperature {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 400;
 }
 #unitLink{

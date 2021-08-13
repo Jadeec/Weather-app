@@ -38,28 +38,30 @@
     
         
          <div class="main ">
-            
-              <div class="row justify-content-around"> 
-                  <div class="col-sm-3"> <span id="city"> Paris </span>  </div>
-                  <div class="col-sm-5 offset-2"><img src="src/partly_cloudy.png"> <span id="weatherDescription"> Mostly cloudy</span></div>
-                </div>
-                
-                <div class="row justify-content-around">
-                    <div class="col-sm-3"> <span id="day"> tuesday </span> <span id="hour"> 17 </span>: <span id= minutes >40 </span> </div>
-                    <div class="col-sm-5 offset-3">Humidity <span id="humidity"> 54 </span> % </div>
+           
+              <div class="row"> 
+                  <div class="col sm-6 ml-3 cityName"> <span id="city"> Paris </span>  </div> 
+
                 </div>
 
-
-                <div class="row temperature-row justify-content-around">
-                    <div class="col-sm-3"> <span id="temperature"> 11 </span>  <span id="preciseUnit"> °C|<a href="#" id= "unitLink"> F </a></span> </div>
-                    <div class="col-sm-5 offset-3"> Wind  <span id="wind"> 11 </span> km/h </div>
+                
+                <div class="row justify-content-around date">
+                    <div class="col-sm-4 "> <span id="day"> tuesday </span> <span id="hour"> 17 </span>: <span id= minutes >40 </span> </div>
+                    <div class="col-sm-4 ">Humidity <span id="humidity"> 54 </span> % </div>
                 </div>
                 
-            
-             
+                <div class="row justify-content-around weatherDescription">
+                    <div class="col-sm-4"> <span id="weatherDescription"> Mostly cloudy</span></div>
+                    <div class="col-sm-4"> Wind  <span id="wind"> 11 </span> km/h </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-sm-6 ml-3 preciseUnit"> <span id="temperature"> <img src="src/partly_cloudy.png"> 11 </span>  <span id="preciseUnit"> °C|<a href="#" id= "unitLink"> F </a></span> </div>
+                </div>
+                
               
                 <div class="forecast">
-                  <div class="row">
+                  <div class="row mt-3 offset-1">
                       <div class="col-3">
                        Column
                      </div>
@@ -77,13 +79,6 @@
    
          </div>
     
-
-            
-            
-                  
-                  
-             
-        
           
             
         </div>
