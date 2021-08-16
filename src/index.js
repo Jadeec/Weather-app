@@ -98,7 +98,6 @@ let locationButton = document.getElementById("locationButton");
 locationButton.addEventListener("click", findLocation); 
 
 // 4 day forcast 
-
 /*function forcastTemp (event){
   event.preventDefault();
   let input = document.getElementById('inputPassword6')
@@ -123,7 +122,8 @@ form.addEventListener("submit", forcastTemp);
   event.preventDefault(); 
   document.getElementById('temperature').innerHTML = `19`;
  */
-
+ 
+// Convert units 
  function fahrenheitUnit (event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
