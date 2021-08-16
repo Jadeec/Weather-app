@@ -44,11 +44,16 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
 axios.get(apiUrl).then(getTemperature);
 
 function getTemperature (response) {
+  console.log(response.data);
   let locationTemperature = response.data.main.temp;
   document.getElementById('temperature').innerHTML = Math.round(locationTemperature);
   let humidity = document.getElementById("humidity").innerHTML = response.data.main.humidity;
   let windSpeed = document.getElementById("wind").innerHTML =Math.round(1.852 * response.data.wind.speed);
   let weatherDescription = document.getElementById("weatherDescription").innerHTML= response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.setAttribute( "src",
+  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 }
@@ -88,7 +93,7 @@ function findLocation (event) {
 let locationButton = document.getElementById("locationButton");
 locationButton.addEventListener("click", findLocation); 
 
-function forcastTemp (event){
+/*function forcastTemp (event){
   event.preventDefault();
   let input = document.getElementById('inputPassword6')
   let city = input.value;
