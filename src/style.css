@@ -46,10 +46,16 @@ a {
  .active:hover{
      text-decoration: none;
  }
- 
+
 .date, .weatherDescription {
     font-size: 12px;
     text-transform: capitalize;
+}
+
+
+.forecast-temperature-min,
+.forecast-temperature-max {
+    font-size: 10px;
 }
 
 #city {
