@@ -51,7 +51,10 @@ a {
     font-size: 12px;
     text-transform: capitalize;
 }
-
+ 
+.forecast {
+    margin-left: 50px;
+}
 
 .forecast-temperature-min,
 .forecast-temperature-max {

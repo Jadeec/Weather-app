@@ -98,31 +98,35 @@ let locationButton = document.getElementById("locationButton");
 locationButton.addEventListener("click", findLocation); 
 
 // 4 day forecast 
-/*function forcastTemp (event){
-  event.preventDefault();
-  let input = document.getElementById('inputPassword6')
-  let city = input.value;
+function displayForecast () {
+  let forecastElement = document.querySelector(".forecast");
 
-let apiKey = "231854760189f7f05bf66b319c23555e";
-let apiUrl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&cnt={3}&appid=${apiKey}&&units=metric`;
-axios.get(apiUrl).then(getForecast);
+  let days = ["tue","wed","thu","fri"];
 
-function getForecast (response){
-console.log(response);
-}
+  let forecastHTML = `<div class="row">`;
 
+  days.forEach(function (day) {
+    forecastHTML = forecastHTML + 
+    `
+    <div class="col-3">
+      <div class="forecast-day"> ${day}</div>
+      <img 
+      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+      alt="ForecastPicture" 
+      width="36px"> 
+      <br>
+      <div class= weather-forecast-temperature> 
+        <span class="forecast-temperature-min"> 18° </span>  
+        <span class="forecast-temperature-max">  11°</span>
+      </div>
+  </div>`;
 
-}
+});
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML; 
 
-let forecast = document.querySelector('forecast');
-form.addEventListener("submit", forecastTemp);
+};
 
-
-/* function change (event) {
-  event.preventDefault(); 
-  document.getElementById('temperature').innerHTML = `19`;
- */
- 
 // Convert units 
  function fahrenheitUnit (event) {
   event.preventDefault();
@@ -149,3 +153,5 @@ fahrenheitChange.addEventListener("click", fahrenheitUnit);
 
 let celsiusChange = document.getElementById('celsiusLink');
 celsiusChange.addEventListener("click", celsiusUnit);
+
+displayForecast();
