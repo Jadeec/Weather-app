@@ -127,8 +127,8 @@ function displayForecast (response) {
         src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
         }@2x.png"
-        alt="ForecastPicture" 
-        width="36px"> 
+        alt="forecastPicture" 
+        width="45px"> 
         <br>
         <div class= weather-forecast-temperature> 
           <span class="forecast-temperature-min"> ${Math.round( forecastDay.temp.min)}°</span>  
