@@ -117,7 +117,6 @@ function displayForecast (response) {
   let forecastHTML = `<div class="row">`;
 
   forecastData.forEach(function (forecastDay, index) {
-    console.log(forecastDay);
 
     if (index < 4) {
       forecastHTML = forecastHTML + 
@@ -144,7 +143,7 @@ forecastHTML = forecastHTML + `</div>`;
 forecastElement.innerHTML = forecastHTML; 
 
 };
-
+//API call for forecast temperature (using latitude an longitude)
 function getForecast (coordonates) {
   apiKey = "231854760189f7f05bf66b319c23555e";
   apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${coordonates.lat}&lon=${coordonates.lon}&appid=${apiKey}&&units=metric`
