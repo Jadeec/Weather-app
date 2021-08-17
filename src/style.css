@@ -24,10 +24,11 @@ a {
     align-self: flex-start;
     top: 65px;
     color: blanchedalmond;
+    margin-left: 30px;
     
 }
-.cityName, .preciseUnit {
-    margin-left: calc(var(--bs-gutter-x)* 2) !important;
+.cityName, .preciseUnit{
+    margin-left: calc(var(--bs-gutter-x)* 3) !important;
     text-transform: capitalize;
 }
 
@@ -55,7 +56,7 @@ a {
 }
  
 .forecast {
-    margin-left: 50px;
+    font-size: 10px;
 }
 
 .forecast-temperature-min,

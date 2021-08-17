@@ -114,14 +114,14 @@ function displayForecast (response) {
   let forecastElement = document.querySelector(".forecast");
 
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = "";
 
   forecastData.forEach(function (forecastDay, index) {
 
     if (index < 4) {
       forecastHTML = forecastHTML + 
       `
-      <div class="col-3">
+      <div class="col-2">
         <div class="forecast-day"> ${getForecastDate(forecastDay.dt)}</div>
         <img 
         src="http://openweathermap.org/img/wn/${
