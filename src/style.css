@@ -28,6 +28,7 @@ a {
 }
 .cityName, .preciseUnit {
     margin-left: calc(var(--bs-gutter-x)* 2) !important;
+    text-transform: capitalize;
 }
 .main {
     color: gray;
